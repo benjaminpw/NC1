@@ -14,7 +14,9 @@
 		4A686DC7228CFD350051B08A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A686DC5228CFD350051B08A /* LaunchScreen.storyboard */; };
 		4A686DCF228D0F600051B08A /* Round3Dbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A686DCE228D0F600051B08A /* Round3Dbutton.swift */; };
 		4A686E24228D7BBF0051B08A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A686E23228D7BBF0051B08A /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		4A686E26228D851F0051B08A /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4A686E25228D851F0051B08A /* 1.m4a */; };
+		4A686E36228E74150051B08A /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4A686E35228E74150051B08A /* test.m4a */; };
+		4A686E38228E75CA0051B08A /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4A686E37228E75CA0051B08A /* 1.m4a */; };
+		4A686E3A228E76CC0051B08A /* 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4A686E39228E76CC0051B08A /* 2.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +29,9 @@
 		4A686DC8228CFD350051B08A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A686DCE228D0F600051B08A /* Round3Dbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round3Dbutton.swift; sourceTree = "<group>"; };
 		4A686E23228D7BBF0051B08A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		4A686E25228D851F0051B08A /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1.m4a; path = ../../../../Downloads/1.m4a; sourceTree = "<group>"; };
+		4A686E35228E74150051B08A /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.m4a; path = ../../../../Downloads/test.m4a; sourceTree = "<group>"; };
+		4A686E37228E75CA0051B08A /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1.m4a; path = ../../../../Downloads/1.m4a; sourceTree = "<group>"; };
+		4A686E39228E76CC0051B08A /* 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2.m4a; path = ../../../../Downloads/2.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,11 @@
 			children = (
 				4A686DBC228CFD330051B08A /* AppDelegate.swift */,
 				4A686DBE228CFD330051B08A /* ViewController.swift */,
+				4A686E35228E74150051B08A /* test.m4a */,
+				4A686E37228E75CA0051B08A /* 1.m4a */,
+				4A686E39228E76CC0051B08A /* 2.m4a */,
 				4A686DC0228CFD330051B08A /* Main.storyboard */,
 				4A686DCE228D0F600051B08A /* Round3Dbutton.swift */,
-				4A686E25228D851F0051B08A /* 1.m4a */,
 				4A686DC3228CFD350051B08A /* Assets.xcassets */,
 				4A686DC5228CFD350051B08A /* LaunchScreen.storyboard */,
 				4A686DC8228CFD350051B08A /* Info.plist */,
@@ -140,9 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A686E36228E74150051B08A /* test.m4a in Resources */,
 				4A686DC7228CFD350051B08A /* LaunchScreen.storyboard in Resources */,
+				4A686E38228E75CA0051B08A /* 1.m4a in Resources */,
+				4A686E3A228E76CC0051B08A /* 2.m4a in Resources */,
 				4A686DC4228CFD350051B08A /* Assets.xcassets in Resources */,
-				4A686E26228D851F0051B08A /* 1.m4a in Resources */,
 				4A686DC2228CFD330051B08A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
