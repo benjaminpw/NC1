@@ -17,6 +17,7 @@
 		4A686E36228E74150051B08A /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4A686E35228E74150051B08A /* test.m4a */; };
 		4A686E38228E75CA0051B08A /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4A686E37228E75CA0051B08A /* 1.m4a */; };
 		4A686E3A228E76CC0051B08A /* 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4A686E39228E76CC0051B08A /* 2.m4a */; };
+		4A9D14562290397700E75781 /* 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4A9D14552290397700E75781 /* 4.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4A686E35228E74150051B08A /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.m4a; path = ../../../../Downloads/test.m4a; sourceTree = "<group>"; };
 		4A686E37228E75CA0051B08A /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1.m4a; path = ../../../../Downloads/1.m4a; sourceTree = "<group>"; };
 		4A686E39228E76CC0051B08A /* 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2.m4a; path = ../../../../Downloads/2.m4a; sourceTree = "<group>"; };
+		4A9D14552290397700E75781 /* 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4.m4a; path = ../../../../Downloads/4.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				4A686DBE228CFD330051B08A /* ViewController.swift */,
 				4A686E35228E74150051B08A /* test.m4a */,
 				4A686E37228E75CA0051B08A /* 1.m4a */,
+				4A9D14552290397700E75781 /* 4.m4a */,
 				4A686E39228E76CC0051B08A /* 2.m4a */,
 				4A686DC0228CFD330051B08A /* Main.storyboard */,
 				4A686DCE228D0F600051B08A /* Round3Dbutton.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A686E36228E74150051B08A /* test.m4a in Resources */,
+				4A9D14562290397700E75781 /* 4.m4a in Resources */,
 				4A686DC7228CFD350051B08A /* LaunchScreen.storyboard in Resources */,
 				4A686E38228E75CA0051B08A /* 1.m4a in Resources */,
 				4A686E3A228E76CC0051B08A /* 2.m4a in Resources */,

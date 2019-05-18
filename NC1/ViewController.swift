@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let musicFile = Bundle.main.path(forResource: "test", ofType: ".m4a")
+        let musicFile = Bundle.main.path(forResource: "4", ofType: ".m4a")
         do {
             try musicEffect = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile!))
         }
@@ -41,6 +41,10 @@ class ViewController: UIViewController {
         
     }
     @IBAction func playTone1(_ sender: Any) {
+        if musicEffect.isPlaying {
+            musicEffect.pause()
+        }
+        musicEffect.currentTime = 0
         musicEffect.play()
 }
     @IBAction func playTone2(_ sender: Round3Dbutton) {
