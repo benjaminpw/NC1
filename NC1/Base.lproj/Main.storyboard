@@ -56,6 +56,9 @@
                                 <rect key="frame" x="477" y="226" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90980392156862744" green="0.73725490196078436" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playTone3:" destination="BYZ-38-t0r" eventType="touchDownRepeat" id="Pa8-Il-SDg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-xg-PPm" customClass="Round3Dbutton" customModule="NC1" customModuleProvider="target">
                                 <rect key="frame" x="647" y="57" width="130" height="130"/>

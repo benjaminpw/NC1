@@ -22,21 +22,43 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let musicFile = Bundle.main.path(forResource: "4", ofType: ".m4a")
+        let musicFile = Bundle.main.path(forResource: "1", ofType: ".mp3")
+        let musicFile1 = Bundle.main.path(forResource: "2", ofType: ".mp3")
+        let musicFile2 = Bundle.main.path(forResource: "3", ofType: ".mp3")
+//        let musicFile3 = Bundle.main.path(forResource: "<#T##String?#>", ofType: ".mp3")
+//        let musicFile4 = Bundle.main.path(forResource: "<#T##String?#>", ofType: ".mp3")
+//        let musicFile5 = Bundle.main.path(forResource: "<#T##String?#>", ofType: ".mp3")
+//        let musicFile6 = Bundle.main.path(forResource: "<#T##String?#>", ofType: ".mp3")
+//        let musicFile7 = Bundle.main.path(forResource: "<#T##String?#>", ofType: ".mp3")
         do {
             try musicEffect = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile!))
+            try musicEffect1 = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile1!))
+            try musicEffect2 = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile2!))
+//            try musicEffect3 = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile3!))
+//            try musicEffect4 = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile4!))
+//            try musicEffect5 = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile5!))
+//            try musicEffect6 = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile6!))
+//            try musicEffect7 = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile7!))
         }
         catch {
             print(error)
         }
         
-        let musicFile1 = Bundle.main.path(forResource: "2", ofType: ".m4a")
-        do {
-            try musicEffect1 = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile1!))
-        }
-        catch {
-            print(error)
-        }
+//        let musicFile1 = Bundle.main.path(forResource: "", ofType: ".mp3")
+//        do {
+//            try musicEffect1 = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile1!))
+//        }
+//        catch {
+//            print(error)
+//        }
+//
+//        let musicFile2 = Bundle.main.path(forResource: "", ofType: ".mp3")
+//        do {
+//            try musicEffect2 = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile2!))
+//        }
+//        catch {
+//            print(error)
+//        }
         
         
     }
@@ -48,6 +70,20 @@ class ViewController: UIViewController {
         musicEffect.play()
 }
     @IBAction func playTone2(_ sender: Round3Dbutton) {
-        musicEffect1.play()
+        if musicEffect1.isPlaying {
+            musicEffect1.pause()
+    }
+    musicEffect1.currentTime = 0
+    musicEffect1.play()
+
+}
+    
+    @IBAction func playTone3(_ sender: Any) {
+        if musicEffect2.isPlaying {
+            musicEffect2.pause()
+        }
+        musicEffect2.currentTime = 0
+        musicEffect2.play()
     }
 }
+
