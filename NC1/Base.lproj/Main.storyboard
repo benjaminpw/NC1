@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90980392156862744" green="0.56470588235294117" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="playTone2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Oi-XE-Od5"/>
+                                    <action selector="playTone2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="28z-Gk-PDz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBH-k8-EMI" customClass="Round3Dbutton" customModule="NC1" customModuleProvider="target">
@@ -41,16 +41,25 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="playTone5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1n-kM-Alr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2D-5i-xSB" customClass="Round3Dbutton" customModule="NC1" customModuleProvider="target">
                                 <rect key="frame" x="307" y="57" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90980392156862744" green="0.89803921568627454" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playTone6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEX-QT-blb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qo-Vs-uIK" customClass="Round3Dbutton" customModule="NC1" customModuleProvider="target">
                                 <rect key="frame" x="477" y="57" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.9137254901960784" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playTone7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lqp-4U-JE6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4r-cg-1Yn" customClass="Round3Dbutton" customModule="NC1" customModuleProvider="target">
                                 <rect key="frame" x="477" y="226" width="130" height="130"/>
@@ -58,17 +67,24 @@
                                 <color key="backgroundColor" red="0.90980392156862744" green="0.73725490196078436" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="playTone3:" destination="BYZ-38-t0r" eventType="touchDownRepeat" id="Pa8-Il-SDg"/>
+                                    <action selector="playTone3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBl-zs-OIc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-xg-PPm" customClass="Round3Dbutton" customModule="NC1" customModuleProvider="target">
                                 <rect key="frame" x="647" y="57" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.76470588235294112" green="1" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playTone8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oDP-on-HW7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zza-Ae-JsE" customClass="Round3Dbutton" customModule="NC1" customModuleProvider="target">
                                 <rect key="frame" x="647" y="226" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.74509803921568629" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playTone4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQ1-Xt-WhO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
