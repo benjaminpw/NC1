@@ -13,7 +13,7 @@ class Round3Dbutton: UIButton {
     override func awakeFromNib() {
         layer.borderWidth = 2
         layer.cornerRadius = 26
-        layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        layer.borderColor = #colorLiteral(red: 0.9994240403, green: 0.9855536819, blue: 0, alpha: 1)
         layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         layer.shadowRadius = 15
     }

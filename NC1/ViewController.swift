@@ -66,7 +66,6 @@ class ViewController: UIViewController {
         musicEffect2.currentTime = 0
         musicEffect2.play()
     }
-    
     @IBAction func playTone4(_ sender: Any) {
         if musicEffect3.isPlaying {
             musicEffect3.pause()
@@ -89,7 +88,7 @@ class ViewController: UIViewController {
         musicEffect6.play()
     }
     @IBAction func playTone7(_ sender: Any) {
-        if musicEffect7.isPlaying {
+    if musicEffect7.isPlaying {
             musicEffect7.pause()
         }
         musicEffect7.currentTime = 0

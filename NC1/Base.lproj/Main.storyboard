@@ -75,6 +75,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.76470588235294112" green="1" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
+                                    <action selector="playTone7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ULt-0B-kPC"/>
                                     <action selector="playTone8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oDP-on-HW7"/>
                                 </connections>
                             </button>
