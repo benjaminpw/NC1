@@ -8,6 +8,9 @@
 
 import UIKit
 import AVFoundation
+import AudioToolbox.AudioServices
+
+let vibrate = SystemSoundID(kSystemSoundID_Vibrate)
 
 class ViewController: UIViewController {
 
@@ -47,6 +50,7 @@ class ViewController: UIViewController {
     let impact = UIImpactFeedbackGenerator()
     @IBAction func playTone1(_ sender: Any) {
         impact.impactOccurred()
+        AudioServicesPlaySystemSound(vibrate)
         if musicEffect.isPlaying {
             musicEffect.pause()
         }
