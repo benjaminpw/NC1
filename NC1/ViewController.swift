@@ -8,9 +8,9 @@
 
 import UIKit
 import AVFoundation
-import AudioToolbox.AudioServices
+//import AudioToolbox.AudioServices
 
-let vibrate = SystemSoundID(kSystemSoundID_Vibrate)
+//let vibrate = SystemSoundID(kSystemSoundID_Vibrate)
 
 class ViewController: UIViewController {
 
@@ -48,9 +48,22 @@ class ViewController: UIViewController {
         }
     }
     let impact = UIImpactFeedbackGenerator()
+    let impactFeedbackGenerator: (
+    light: UIImpactFeedbackGenerator,
+    medium: UIImpactFeedbackGenerator,
+    heavy: UIImpactFeedbackGenerator) = (
+        
+    UIImpactFeedbackGenerator(style: .light),
+    UIImpactFeedbackGenerator(style: .medium),
+    UIImpactFeedbackGenerator(style: .heavy)
+    )
+    
+    
     @IBAction func playTone1(_ sender: Any) {
-        impact.impactOccurred()
-        AudioServicesPlaySystemSound(vibrate)
+//    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+//        impact.impactOccurred()
+        impactFeedbackGenerator.heavy.prepare()
+        impactFeedbackGenerator.heavy.impactOccurred()
         if musicEffect.isPlaying {
             musicEffect.pause()
         }
@@ -58,17 +71,19 @@ class ViewController: UIViewController {
         musicEffect.play()
 }
     @IBAction func playTone2(_ sender: Any) {
-        impact.impactOccurred()
+//        impact.impactOccurred()
+        impactFeedbackGenerator.heavy.prepare()
+        impactFeedbackGenerator.heavy.impactOccurred()
         if musicEffect1.isPlaying {
             musicEffect1.pause()
     }
     musicEffect1.currentTime = 0
     musicEffect1.play()
-
 }
     @IBAction func playTone3(_ sender: Any) {
-        impact.impactOccurred()
-        impact.impactOccurred()
+//        impact.impactOccurred()
+        impactFeedbackGenerator.heavy.prepare()
+        impactFeedbackGenerator.heavy.impactOccurred()
         if musicEffect2.isPlaying {
             musicEffect2.pause()
         }
@@ -76,7 +91,9 @@ class ViewController: UIViewController {
         musicEffect2.play()
     }
     @IBAction func playTone4(_ sender: Any) {
-        impact.impactOccurred()
+//        impact.impactOccurred()
+        impactFeedbackGenerator.medium.prepare()
+        impactFeedbackGenerator.medium.impactOccurred()
         if musicEffect3.isPlaying {
             musicEffect3.pause()
         }
@@ -84,7 +101,9 @@ class ViewController: UIViewController {
         musicEffect3.play()
     }
     @IBAction func playTone5(_ sender: Any) {
-        impact.impactOccurred()
+//        impact.impactOccurred()
+        impactFeedbackGenerator.medium.prepare()
+        impactFeedbackGenerator.medium.impactOccurred()
         if musicEffect4.isPlaying {
             musicEffect4.pause()
         }
@@ -92,7 +111,9 @@ class ViewController: UIViewController {
         musicEffect4.play()
     }
     @IBAction func playTone6(_ sender: Any) {
-        impact.impactOccurred()
+//        impact.impactOccurred()
+        impactFeedbackGenerator.medium.prepare()
+        impactFeedbackGenerator.medium.impactOccurred()
         if musicEffect5.isPlaying {
             musicEffect5.pause()
         }
@@ -100,7 +121,9 @@ class ViewController: UIViewController {
         musicEffect5.play()
     }
     @IBAction func playTone7(_ sender: Any) {
-        impact.impactOccurred()
+//        impact.impactOccurred()
+        impactFeedbackGenerator.light.prepare()
+        impactFeedbackGenerator.light.impactOccurred()
         if musicEffect6.isPlaying{
             musicEffect6.pause()
         }
@@ -108,11 +131,31 @@ class ViewController: UIViewController {
         musicEffect6.play()
     }
     @IBAction func playTone8(_ sender: Any) {
-        impact.impactOccurred()
+//        impact.impactOccurred()
+        impactFeedbackGenerator.light.prepare()
+        impactFeedbackGenerator.light.impactOccurred()
     if musicEffect7.isPlaying{
         musicEffect7.pause()
         }
         musicEffect7.currentTime = 0
         musicEffect7.play()
     }
+    
+    
+    
+    
+    @IBAction func highLight1(_ sender: UIButton) {
+        let currentColor = sender.backgroundColor
+        UIView.animate(withDuration: 0.1, animations: {
+            sender.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        }) { (isFinished) in
+            UIView.animate(withDuration: 0.1, animations: {
+                sender.backgroundColor = currentColor
+            })
+        }
+    }
+    
+    
+    
 }
+
