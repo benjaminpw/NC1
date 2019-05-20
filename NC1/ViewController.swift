@@ -44,7 +44,9 @@ class ViewController: UIViewController {
             print(error)
         }
     }
+    let impact = UIImpactFeedbackGenerator()
     @IBAction func playTone1(_ sender: Any) {
+        impact.impactOccurred()
         if musicEffect.isPlaying {
             musicEffect.pause()
         }
@@ -52,6 +54,7 @@ class ViewController: UIViewController {
         musicEffect.play()
 }
     @IBAction func playTone2(_ sender: Any) {
+        impact.impactOccurred()
         if musicEffect1.isPlaying {
             musicEffect1.pause()
     }
@@ -60,6 +63,8 @@ class ViewController: UIViewController {
 
 }
     @IBAction func playTone3(_ sender: Any) {
+        impact.impactOccurred()
+        impact.impactOccurred()
         if musicEffect2.isPlaying {
             musicEffect2.pause()
         }
@@ -67,6 +72,7 @@ class ViewController: UIViewController {
         musicEffect2.play()
     }
     @IBAction func playTone4(_ sender: Any) {
+        impact.impactOccurred()
         if musicEffect3.isPlaying {
             musicEffect3.pause()
         }
@@ -74,6 +80,7 @@ class ViewController: UIViewController {
         musicEffect3.play()
     }
     @IBAction func playTone5(_ sender: Any) {
+        impact.impactOccurred()
         if musicEffect4.isPlaying {
             musicEffect4.pause()
         }
@@ -81,18 +88,27 @@ class ViewController: UIViewController {
         musicEffect4.play()
     }
     @IBAction func playTone6(_ sender: Any) {
+        impact.impactOccurred()
         if musicEffect5.isPlaying {
             musicEffect5.pause()
+        }
+        musicEffect5.currentTime = 0
+        musicEffect5.play()
+    }
+    @IBAction func playTone7(_ sender: Any) {
+        impact.impactOccurred()
+        if musicEffect6.isPlaying{
+            musicEffect6.pause()
         }
         musicEffect6.currentTime = 0
         musicEffect6.play()
     }
-    @IBAction func playTone7(_ sender: Any) {
-    if musicEffect7.isPlaying {
-            musicEffect7.pause()
+    @IBAction func playTone8(_ sender: Any) {
+        impact.impactOccurred()
+    if musicEffect7.isPlaying{
+        musicEffect7.pause()
         }
         musicEffect7.currentTime = 0
         musicEffect7.play()
     }
 }
-
