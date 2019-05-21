@@ -10,6 +10,7 @@ import UIKit
 
 
 class Round3Dbutton: UIButton {
+    
     override func awakeFromNib() {
         layer.borderWidth = 2
         layer.cornerRadius = 26
@@ -18,6 +19,16 @@ class Round3Dbutton: UIButton {
         layer.shadowRadius = 15
     }
     
+    var currentColor:UIColor?
     
-
+    override open var isHighlighted: Bool {
+        didSet {
+            if isHighlighted {
+                currentColor = backgroundColor
+                backgroundColor = UIColor.init(cgColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.5))
+            } else{
+                backgroundColor = currentColor
+            }
+        }
+    }
 }

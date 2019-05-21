@@ -144,18 +144,17 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func highLight1(_ sender: UIButton) {
-        let currentColor = sender.backgroundColor
-        UIView.animate(withDuration: 0.1, animations: {
-            sender.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
-        }) { (isFinished) in
-            UIView.animate(withDuration: 0.1, animations: {
-                sender.backgroundColor = currentColor
-            })
+//    @IBAction func highLight1(_ sender: UIButton) {
+//        override
+    
+//        let currentColor = sender.backgroundColor
+//        sender.backgroundColor = #colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 0.5)
+//        UIView.animate(withDuration: 0.1, animations: {
+//            sender.backgroundColor = #colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 0.5)
+//        }) { (isFinished) in
+//            UIView.animate(withDuration: 0.1, animations: {
+//                sender.backgroundColor = currentColor
+//            })
         }
-    }
     
-    
-    
-}
 
