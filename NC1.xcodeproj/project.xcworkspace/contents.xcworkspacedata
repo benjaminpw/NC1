@@ -2,7 +2,28 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../../Downloads/4.m4a">
+      location = "group:../../../../../Users/benjopw/Downloads/NC1/1.mp3">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../Users/benjopw/Downloads/NC1/2.mp3">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../Users/benjopw/Downloads/NC1/3.mp3">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../Users/benjopw/Downloads/NC1/4.mp3">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../Users/benjopw/Downloads/NC1/5.mp3">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../Users/benjopw/Downloads/NC1/6.mp3">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../Users/benjopw/Downloads/NC1/7.mp3">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../Users/benjopw/Downloads/NC1/8.mp3">
    </FileRef>
    <FileRef
       location = "self:">

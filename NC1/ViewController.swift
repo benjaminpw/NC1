@@ -140,10 +140,6 @@ class ViewController: UIViewController {
         musicEffect7.currentTime = 0
         musicEffect7.play()
     }
-    
-    
-    
-    
 //    @IBAction func highLight1(_ sender: UIButton) {
 //        override
     
