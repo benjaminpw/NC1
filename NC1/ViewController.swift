@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     var musicEffect7: AVAudioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
+        mainViewController.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        
         super.viewDidLoad()
         let musicFile = Bundle.main.path(forResource: "1", ofType: ".mp3")
         let musicFile1 = Bundle.main.path(forResource: "2", ofType: ".mp3")
@@ -57,8 +59,6 @@ class ViewController: UIViewController {
     UIImpactFeedbackGenerator(style: .medium),
     UIImpactFeedbackGenerator(style: .heavy)
     )
-    
-    
     @IBAction func playTone1(_ sender: Any) {
 //    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
 //        impact.impactOccurred()
@@ -140,17 +140,9 @@ class ViewController: UIViewController {
         musicEffect7.currentTime = 0
         musicEffect7.play()
     }
-//    @IBAction func highLight1(_ sender: UIButton) {
-//        override
-    
-//        let currentColor = sender.backgroundColor
-//        sender.backgroundColor = #colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 0.5)
-//        UIView.animate(withDuration: 0.1, animations: {
-//            sender.backgroundColor = #colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 0.5)
-//        }) { (isFinished) in
-//            UIView.animate(withDuration: 0.1, animations: {
-//                sender.backgroundColor = currentColor
-//            })
-        }
-    
+    @IBOutlet var mainViewController: UIView!
+}
+
+
+
 
